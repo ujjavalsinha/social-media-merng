@@ -6,7 +6,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 import {ApolloProvider} from "@apollo/client";
 
 const httpLink = new HttpLink({
-    uri : 'http://localhost:5000/graphql'
+    uri : 'https://social-media-react-merng.herokuapp.com/graphql'
 })
 
 const authLink = new ApolloLink((operation, forward) => {
